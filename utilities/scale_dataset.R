@@ -14,7 +14,7 @@
 source('./utilities/load_and_omit_dataset.R')
 
 
-r = 0.5
+r = 1
 scaled_data=data_t[,3:26]
 
 X = 0
@@ -43,5 +43,9 @@ complete_cases = complete.cases(scaled_data)
 scaled_data = scaled_data[complete_cases,]
 print(5057-sum(complete_cases))
 
-# boxplot(data_t[,6:12], main = "Scaled Dataset")
-boxplot(scaled_data[,6:12], main = "Scaled Dataset")
+# boxplot(data_t[,6:12], main = "Original Dataset")
+# boxplot(scaled_data, main = "Scaled Dataset")4
+
+
+
+
